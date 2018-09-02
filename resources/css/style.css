@@ -1,0 +1,245 @@
+@font-face {
+  font-family: 'Barlow Condensed';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Barlow Condensed Regular'), local('BarlowCondensed-Regular'), url(https://fonts.gstatic.com/s/barlowcondensed/v1/HTx3L3I-JCGChYJ8VI-L6OO_au7B6xHT2g.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+@font-face {
+  font-family: 'Barlow Condensed';
+  font-style: normal;
+  font-weight: 600;
+  src: local('Barlow Condensed SemiBold'), local('BarlowCondensed-SemiBold'), url(https://fonts.gstatic.com/s/barlowcondensed/v1/HTxwL3I-JCGChYJ8VI-L6OO_au7B4873z3bWuQ.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+@font-face {
+  font-family: 'Barlow Condensed';
+  font-style: normal;
+  font-weight: 800;
+  src: local('Barlow Condensed ExtraBold'), local('BarlowCondensed-ExtraBold'), url(https://fonts.gstatic.com/s/barlowcondensed/v1/HTxwL3I-JCGChYJ8VI-L6OO_au7B47b1z3bWuQ.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+html {
+  font-family: "Barlow Condensed", sans-serif;
+  color: #4a4a4a;
+}
+
+header {
+  position: fixed;
+  z-index: 100;
+  width: 100%;
+  background: #fff;
+}
+
+main {
+  position: relative;
+  top: 6rem;
+}
+
+header .content {
+  display: flex;
+  justify-content: space-between;
+  margin: 1rem 1.5rem 1rem 1.5rem;
+  font-size: 2rem;
+  height: 4rem;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+}
+
+ul {
+  display: flex;
+}
+
+.desktop ul li {
+  margin-left: 1rem;
+}
+
+#logo {
+  display: flex;
+  align-items: center;
+}
+
+#logo a img {
+  height: 4rem;
+  margin-top: 0.5rem;
+}
+
+#logo a {
+  color: #9b9b9b;
+}
+
+#logo a span {
+  font-weight: 600;
+}
+
+.banner {
+  display: flex;
+  align-items: center;
+  background: #d8d8d8;
+}
+
+.banner-image,
+.info-main  {
+  margin: 3rem 5rem 3rem 2.05rem;
+  max-width: 55%;
+}
+
+.banner-image img,
+.info-main img {
+  max-width: 100%;
+}
+
+.banner-text h1 {
+  font-size: 5rem;
+  font-weight: 800;
+  margin-bottom: 3rem;
+}
+
+.banner-text p {
+  font-size: 2.5rem;
+  font-weight: 600;
+  margin-bottom: 3rem;
+}
+
+.start-button {
+  position: relative;
+  background: #4a4a4a;
+  text-align: center;
+  color: #fff;
+  padding: 1.3rem 0;
+  font-size: 2rem;
+  cursor: pointer;
+  transition: all 0.2s ease-out;
+}
+
+.start-button span a {
+  color: #fff;
+}
+
+.start-button:hover {
+  background: #222;
+}
+
+.start-button:active {
+  top: 1px;
+}
+
+.information {
+  display: flex;
+  background: #f3f5f5;
+}
+
+.info-main h2 {
+  font-size: 4rem;
+  font-weight: 800;
+  margin: 2rem 0;
+}
+
+.info-main {
+  font-size: 1.75rem;
+}
+
+.info-main p {
+  margin-bottom: 2.5rem;
+}
+
+.info-main span {
+  font-family: sans-serif;
+  font-size: 1.2rem;
+}
+
+.info-articles {
+  display: flex;
+  flex-direction: column;
+  margin-top: 3rem;
+}
+
+.info-article {
+  padding: 1rem 3rem 1rem 2rem;
+  display: flex;
+  align-items: center;
+  border-left: 1px solid #d8d8d8;
+  transition: background 0.2s ease-out;
+}
+
+.info-article:hover {
+  background: #d8d8d8;
+}
+
+.info-image img {
+  max-width: 90%;
+}
+
+.info-text h3 {
+  font-size: 2.5rem;
+  font-weight: 600;
+  margin-bottom: 1.5rem;
+}
+
+.info-text p {
+  font-size: 1.75rem;
+  margin-bottom: 1.5rem;
+}
+
+.info-text a {
+  color: #4a90e2;
+  font-size: 1.75rem;
+  transition: color 0.2s ease-out;
+}
+
+.info-text a:hover {
+  color: #8bb8ee;
+}
+
+.courses-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.headline {
+  font-size: 4rem;
+  font-weight: 800;
+}
+
+.courses {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+
+
+
+
+
+.video-thesis {
+  max-width: 55%
+}
+
+video {
+  max-width: 100%;
+}
+
+.thesis-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.thesises {
+  display: flex;
+}
+
+
+
+
+footer {
+  display: flex;
+  justify-content: space-between;
+}
