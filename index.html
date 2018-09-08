@@ -1,14 +1,27 @@
+<!--
+                                Some clarifications
+
+I've decided to keep the color scheme from the wireframes and tried to stick
+with it with other properties too, but changed them where I thought it is
+suitable. Container width of website is 1920px, so it looks best on FullHD
+displays. Since I have a phone with 1080x1920 resolution, I've decided to make
+a mobile version starting from 1085 max-width. -->
+
 <!DOCTYPE html>
 <html>
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Colmar Academy</title>
     <link rel="stylesheet" href="resources/css/reset.css">
     <link rel="stylesheet" href="resources/css/style.css">
     <link rel="icon" href="resources/favicon/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.css">
   </head>
   <body>
+
     <!-- Header -->
+
     <header>
       <div class="content">
         <div id="logo">
@@ -46,7 +59,7 @@
           <h1>Learn something<br> new everyday</h1>
           <p>Once you're on the path of knowledge,<br> you will never leave it.<br></p>
           <p>Because it's fun.</p>
-          <div class="start-button">
+          <div class="start-button" role="button">
             <span><a href="#start">Start here</a></span>
           </div>
         </div>
@@ -217,6 +230,10 @@
             <p>&copy; 2018 Colmar Academy. All rights reserved</p>
           </div>
           <div class="footer-nav">
+            <i class="fa fa-youtube fa-lg"></i>
+            <i class="fa fa-facebook fa-lg"></i>
+            <i class="fa fa-twitter fa-lg"></i>
+            <i class="fa fa-instagram fa-lg"></i>
             <ul>
               <li><a href="#">Terms</a></li>
               <li><a href="#">Privacy</a></li>
